@@ -1,5 +1,7 @@
 # OpenGoldSDR
 
+![OpenGoldSDR prototype concept](docs/assets/opengoldsdr-hero.jpg)
+
 OpenGoldSDR is an open-source research project exploring whether low-cost SDR, electromagnetic sensing, public geology data, GPS-tagged field notes, and community review can help narrow down where to look for gold-bearing ground.
 
 This is not framed as "Wi-Fi finds gold." Gold is difficult to detect directly through soil with consumer radio hardware. The more realistic research angle is anomaly detection: identifying changes in soil moisture, conductivity, mineralization, geology, quartz indicators, old mine workings, terrain context, and public-data patterns that may help prospectors decide where to test next.
