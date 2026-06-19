@@ -46,6 +46,15 @@ The goal is not to make exaggerated claims. The goal is to build a testable open
 
 Initial field context is the Georgia Gold Belt, especially historical gold-bearing areas near Augusta, Clarks Hill, and nearby public-data points. The repo may expand as contributors add datasets, hardware results, and field notes from other regions.
 
+## Synthetic Aperture Radar (SAR) direction
+
+Inspired by satellite radio-tomography (Filippo Biondi / HarmonicSAR — the "scan under the pyramids" method), we apply the **same SAR math at garage scale**: move a radar along a precise rail to synthesize a large aperture and map subsurface dielectric/structural boundaries (quartz veins, voids, mineralized contacts, wet faults) — the structures gold hides near. This is anomaly mapping, not direct gold detection, and it is an independent open implementation, not Biondi's patented pipeline (his patent protects his code, not the physics).
+
+- **[docs/Ground_Based_Rail_SAR.md](docs/Ground_Based_Rail_SAR.md)** — rail/gantry hardware: Tier-1 garage rail SAR ($250–700, MIT Coffee Can / Charvat lineage) and Tier-2 VLF EM array; text-to-CAD path (Zoo / OpenSCAD / CadQuery).
+- **[docs/SAR_Algorithms_and_Data.md](docs/SAR_Algorithms_and_Data.md)** — free satellite SAR data (Sentinel-1/ASF, Capella, Umbra), the open Python stack (SNAP, GMTSAR, MintPy, Sarsen, awesome-sar), and the three-pillar algorithm (phase autofocus, coherence time-series, wave-structure inversion).
+- **[hardware/rail_sar/rail_gantry.scad](hardware/rail_sar/rail_gantry.scad)** — parametric rail model (OpenSCAD).
+- **[software/rail_sar/](software/rail_sar/)** — Python back-projection image formation + rail control/capture skeletons.
+
 ## Who should contribute
 
 This project needs review from:
